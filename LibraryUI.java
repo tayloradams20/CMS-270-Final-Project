@@ -1,7 +1,10 @@
 
-// TESTING
+// David Austen
 
-// TESTING
+// Taylor Adams
+
+// Josh Mitchell
+
 
 import javax.swing.*;
 import java.awt.*;
