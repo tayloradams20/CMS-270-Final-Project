@@ -101,7 +101,7 @@ public class LibraryUI extends JFrame {
         
         JLabel loginTitle = new JLabel("Student Login / Register", JLabel.CENTER);
         loginTitle.setFont(new Font("Segoe UI", Font.BOLD, 24));
-        loginTitle.setForeground(new Color(0, 51, 102)); // Rollins blue text
+        loginTitle.setForeground(new Color(51, 153, 255)); // Rollins blue text
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 2;
@@ -109,7 +109,7 @@ public class LibraryUI extends JFrame {
         
         JLabel idLabel = new JLabel("Student ID:");
         idLabel.setFont(new Font("Segoe UI", Font.PLAIN, 16));
-        idLabel.setForeground(new Color(0, 51, 102)); // Rollins blue text
+        idLabel.setForeground(new Color(51, 153, 255)); // Rollins blue text
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
@@ -124,7 +124,7 @@ public class LibraryUI extends JFrame {
         
         JLabel nameLabel = new JLabel("Name (for new students):");
         nameLabel.setFont(new Font("Segoe UI", Font.PLAIN, 16));
-        nameLabel.setForeground(new Color(0, 51, 102)); // Rollins blue text
+        nameLabel.setForeground(new Color(51, 153, 255)); // Rollins blue text
         gbc.gridx = 0;
         gbc.gridy = 2;
         formPanel.add(nameLabel, gbc);
@@ -138,7 +138,7 @@ public class LibraryUI extends JFrame {
         
         JButton loginBtn = new JButton("Login / Register");
         loginBtn.setFont(new Font("Segoe UI", Font.BOLD, 16));
-        loginBtn.setBackground(new Color(0, 51, 102)); // Rollins blue button
+        loginBtn.setBackground(new Color(51, 153, 255)); // Rollins blue button
         loginBtn.setForeground(Color.WHITE); // White text
         loginBtn.setFocusPainted(false);
         loginBtn.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
@@ -151,7 +151,7 @@ public class LibraryUI extends JFrame {
         
         // Footer
         JPanel footerPanel = new JPanel();
-        footerPanel.setBackground(new Color(0, 51, 102)); // Rollins blue footer
+        footerPanel.setBackground(new Color(51, 153, 255)); // Rollins blue footer
         footerPanel.setPreferredSize(new Dimension(900, 40));
         JLabel footerLabel = new JLabel("© 2025 Rollins College Library Management System", JLabel.CENTER);
         footerLabel.setFont(new Font("Segoe UI", Font.PLAIN, 14));
@@ -177,13 +177,13 @@ public class LibraryUI extends JFrame {
 
     private JPanel createRollinsHeaderPanel() {
         JPanel headerPanel = new JPanel(new BorderLayout());
-        headerPanel.setBackground(new Color(0, 51, 102)); // Rollins blue background
+        headerPanel.setBackground(new Color(51, 153, 255)); // Rollins blue background
         headerPanel.setPreferredSize(new Dimension(900, 120));
         headerPanel.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, Color.YELLOW)); // Yellow border
         
         // Logo panel
         JPanel logoPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        logoPanel.setBackground(new Color(0, 51, 102)); // Rollins blue background
+        logoPanel.setBackground(new Color(51, 153, 255)); // Rollins blue background
         logoPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         
         // Create Rollins logo with yellow text on blue background
@@ -195,7 +195,7 @@ public class LibraryUI extends JFrame {
         
         // Library title panel
         JPanel titlePanel = new JPanel();
-        titlePanel.setBackground(new Color(0, 51, 102)); // Rollins blue background
+        titlePanel.setBackground(new Color(51, 153, 255)); // Rollins blue background
         titlePanel.setBorder(BorderFactory.createEmptyBorder(15, 0, 15, 20));
         
         JLabel titleLabel = new JLabel("Olin Library Management System");
@@ -230,7 +230,7 @@ public class LibraryUI extends JFrame {
         JButton logoutBtn = new JButton("Logout");
         logoutBtn.setFont(new Font("Segoe UI", Font.PLAIN, 12));
         logoutBtn.setBackground(Color.YELLOW); // Yellow button
-        logoutBtn.setForeground(new Color(0, 51, 102)); // Blue text
+        logoutBtn.setForeground(new Color(51, 153, 255)); // Blue text
         logoutBtn.setFocusPainted(false);
         logoutBtn.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         userPanel.add(logoutBtn);
@@ -244,7 +244,7 @@ public class LibraryUI extends JFrame {
         // Create tabbed pane
         tabbedPane = new JTabbedPane();
         tabbedPane.setBackground(Color.WHITE);
-        tabbedPane.setForeground(new Color(0, 51, 102)); // Blue text for tabs
+        tabbedPane.setForeground(new Color(51, 153, 255)); // Blue text for tabs
         
         // Create panels for each tab
         createBooksTab();
@@ -282,7 +282,7 @@ public class LibraryUI extends JFrame {
         
         JScrollPane scrollPane = new JScrollPane(output);
         scrollPane.setBorder(BorderFactory.createTitledBorder(
-            BorderFactory.createLineBorder(new Color(0, 51, 102)),
+            BorderFactory.createLineBorder(new Color(51, 153, 255)),
             "Library Books"
         ));
         
@@ -291,12 +291,12 @@ public class LibraryUI extends JFrame {
         buttonPanel.setBackground(Color.WHITE);
         
         JButton showBooksBtn = new JButton("Show All Books");
-        showBooksBtn.setBackground(new Color(0, 51, 102));
+        showBooksBtn.setBackground(new Color(51, 153, 255));
         showBooksBtn.setForeground(Color.WHITE);
         showBooksBtn.addActionListener(e -> showBooks());
         
         JButton addBookBtn = new JButton("Add New Book");
-        addBookBtn.setBackground(new Color(0, 51, 102));
+        addBookBtn.setBackground(new Color(51, 153, 255));
         addBookBtn.setForeground(Color.WHITE);
         addBookBtn.addActionListener(e -> addBook());
         
@@ -323,7 +323,7 @@ public class LibraryUI extends JFrame {
         
         JLabel titleLabel = new JLabel("Loan a Book");
         titleLabel.setFont(new Font("Segoe UI", Font.BOLD, 18));
-        titleLabel.setForeground(new Color(0, 51, 102));
+        titleLabel.setForeground(new Color(51, 153, 255));
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 2;
@@ -331,7 +331,7 @@ public class LibraryUI extends JFrame {
         
         JLabel idLabel = new JLabel("Book ID:");
         idLabel.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-        idLabel.setForeground(new Color(0, 51, 102));
+        idLabel.setForeground(new Color(51, 153, 255));
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
@@ -344,7 +344,7 @@ public class LibraryUI extends JFrame {
         formPanel.add(bookIdField, gbc);
         
         JButton loanBtn = new JButton("Loan Book");
-        loanBtn.setBackground(new Color(0, 51, 102));
+        loanBtn.setBackground(new Color(51, 153, 255));
         loanBtn.setForeground(Color.WHITE);
         loanBtn.setFont(new Font("Segoe UI", Font.BOLD, 14));
         gbc.gridx = 0;
@@ -408,7 +408,7 @@ public class LibraryUI extends JFrame {
         
         JLabel titleLabel = new JLabel("Return a Book");
         titleLabel.setFont(new Font("Segoe UI", Font.BOLD, 18));
-        titleLabel.setForeground(new Color(0, 51, 102));
+        titleLabel.setForeground(new Color(51, 153, 255));
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 2;
@@ -416,7 +416,7 @@ public class LibraryUI extends JFrame {
         
         JLabel idLabel = new JLabel("Book ID:");
         idLabel.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-        idLabel.setForeground(new Color(0, 51, 102));
+        idLabel.setForeground(new Color(51, 153, 255));
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
@@ -429,7 +429,7 @@ public class LibraryUI extends JFrame {
         formPanel.add(bookIdField, gbc);
         
         JButton returnBtn = new JButton("Return Book");
-        returnBtn.setBackground(new Color(0, 51, 102));
+        returnBtn.setBackground(new Color(51, 153, 255));
         returnBtn.setForeground(Color.WHITE);
         returnBtn.setFont(new Font("Segoe UI", Font.BOLD, 14));
         gbc.gridx = 0;
@@ -484,7 +484,7 @@ public class LibraryUI extends JFrame {
         
         JLabel titleLabel = new JLabel("Search Books");
         titleLabel.setFont(new Font("Segoe UI", Font.BOLD, 18));
-        titleLabel.setForeground(new Color(0, 51, 102));
+        titleLabel.setForeground(new Color(51, 153, 255));
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 2;
@@ -492,7 +492,7 @@ public class LibraryUI extends JFrame {
         
         JLabel searchLabel = new JLabel("Search (title, author, genre):");
         searchLabel.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-        searchLabel.setForeground(new Color(0, 51, 102));
+        searchLabel.setForeground(new Color(51, 153, 255));
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
@@ -505,7 +505,7 @@ public class LibraryUI extends JFrame {
         formPanel.add(searchField, gbc);
         
         JButton searchBtn = new JButton("Search");
-        searchBtn.setBackground(new Color(0, 51, 102));
+        searchBtn.setBackground(new Color(51, 153, 255));
         searchBtn.setForeground(Color.WHITE);
         searchBtn.setFont(new Font("Segoe UI", Font.BOLD, 14));
         gbc.gridx = 0;
@@ -563,7 +563,7 @@ public class LibraryUI extends JFrame {
         loansScroll.setBorder(BorderFactory.createTitledBorder("My Current Loans"));
         
         JButton refreshBtn = new JButton("Refresh My Loans");
-        refreshBtn.setBackground(new Color(0, 51, 102));
+        refreshBtn.setBackground(new Color(51, 153, 255));
         refreshBtn.setForeground(Color.WHITE);
         refreshBtn.setFont(new Font("Segoe UI", Font.BOLD, 14));
         refreshBtn.addActionListener(e -> {
